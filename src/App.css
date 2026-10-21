@@ -1,0 +1,52 @@
+
+.usersGrid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 40px auto;
+
+}
+
+.userCard {
+  
+  border: 2px solid #000000;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.userCard:hover {
+  transform: translateY(-8px);
+  border-color: #00ff40;
+}
+
+
+.userCard h2 {
+  color:#00ff73;
+  margin-bottom: 20px;
+}
+
+.userCard p {
+  color: #00ff73;
+  
+}
+
+.userCard.over-30 h2 {
+
+  color: #ff0000;
+
+}
+
+.userCard.over-30 p {
+  color: #ff0000;
+}
+
+.userCard.over-30:hover {
+
+  transform: translateY(-8px);
+  border-color: #ff0000;
+}

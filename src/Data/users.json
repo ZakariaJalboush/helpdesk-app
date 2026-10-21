@@ -1,0 +1,19 @@
+
+
+{
+ "users" : [
+ {"id": 1, "name": "Ahmad", "age": 25},
+ {"id": 2, "name": "Sara", "age": 31},
+ {"id": 3, "name": "Omar", "age": 30},
+ {"id": 4, "name": "Lana", "age": 22},
+ {"id": 5, "name": "Khaled", "age": 35},
+ {"id": 6, "name": "Noor", "age": 27},
+ {"id": 7, "name": "Yousef", "age": 42},
+ {"id": 8, "name": "Rana", "age": 29},
+ {"id": 9, "name": "Hala", "age": 33}
+
+    ]
+
+}
+
+
