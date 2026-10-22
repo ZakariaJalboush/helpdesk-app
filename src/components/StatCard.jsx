@@ -6,5 +6,5 @@ function StatCard({ title, value = 0 }) {
     </article>
   );
 }
-
+//yanal
 export default StatCard;
