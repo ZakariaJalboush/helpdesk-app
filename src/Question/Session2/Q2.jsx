@@ -5,23 +5,14 @@ import StatCard from "../components/StatCard.jsx";
 
 function Q2() {
   const agents = [
+    { name: "koko", role: "Team Lead", activeTickets: 7, capacity: 12 },
     { name: "Ahmad", role: "Team Lead", activeTickets: 7, capacity: 12 },
     { name: "Sara", capacity: 8 },
     { name: "Omar", role: "Support Agent", activeTickets: 9, capacity: 10 },
+    { name: "abd", role: "dev", activeTickets: 9, capacity: 10 },
   ];
 
-  const teamTotals = agents.reduce(
-    (totals, agent) => {
-      const activeTickets = agent.activeTickets ?? 0;
-      const capacity = agent.capacity ?? 0;
-
-      totals.activeTickets += activeTickets;
-      totals.capacity += capacity;
-      totals.remaining += capacity - activeTickets;
-      return totals;
-    },
-    { activeTickets: 0, capacity: 0, remaining: 0 },
-  );
+  const teamTotals = 10;
 
   return (
     <main className="app-shell">
@@ -40,13 +31,44 @@ function Q2() {
 
       <Panel title="Team overview">
         <div className="stats-grid">
-          <StatCard title="Active tickets" value={teamTotals.activeTickets} />
-          <StatCard title="Total capacity" value={teamTotals.capacity} />
-          <StatCard title="Available capacity" value={teamTotals.remaining} />
+          <StatCard title="Active tickets" value={teamTotals} />
+          <StatCard title="Total capacity" value={teamTotals} />
+          <StatCard title="Available capacity" />
+          {/* <AgentCard name="koko111122" role="Team Leadddddd" activeTickets={7} capacity={12} /> */}
         </div>
       </Panel>
 
       <Panel title="Support team">
+        <p className="panel-description">
+          Current assignments and remaining ticket capacity for each team
+          member.
+        </p>
+        <div className="agents-grid">
+          {agents.map((x) => (
+            <div>
+              <AgentCard
+                name={x.name}
+                role={x.role}
+                activeTickets={x.activeTickets}
+                capacity={x.capacity}
+              />
+            </div>
+          ))}
+        </div>
+      </Panel>
+
+      <Panel title="test">
+        <p className="panel-description">
+          Current assignments and remaining ticket capacity for each team
+          member.
+        </p>
+        <div className="agents-grid">
+          {agents.map((agent) => (
+            <AgentCard key={agent.name} {...agent} />
+          ))}
+        </div>
+      </Panel>
+      <Panel title="test">
         <p className="panel-description">
           Current assignments and remaining ticket capacity for each team
           member.
