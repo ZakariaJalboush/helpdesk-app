@@ -1,0 +1,154 @@
+.q4-page {
+  box-sizing: border-box;
+  width: min(100% - 48px, 1080px);
+  margin: 0 auto;
+  padding: 52px 0 72px;
+}
+
+.q4-page-header {
+  margin-bottom: 32px;
+}
+
+.q4-eyebrow {
+  margin: 0 0 7px;
+  color: #6874c8;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.5px;
+}
+
+.q4-page-header h1 {
+  margin: 0;
+  color: #192238;
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 720;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.q4-page-description {
+  margin: 9px 0 0;
+  color: #778197;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.q4-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.q4-frame {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 22px;
+  overflow-wrap: anywhere;
+  border: 1px solid #e9ecf2;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgb(33 45 76 / 4%);
+}
+
+.q4-frame-header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.q4-frame-title {
+  margin: 0;
+  color: #202a40;
+  font-size: 18px;
+  font-weight: 680;
+  line-height: 1.35;
+}
+
+.q4-frame-subtitle {
+  margin: 5px 0 0;
+  color: #8a93a5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.q4-frame-content {
+  padding-top: 16px;
+}
+
+.q4-card-badge {
+  margin-bottom: 14px;
+}
+
+.q4-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.q4-badge-blue {
+  background: #e9edff;
+  color: #4657c8;
+}
+
+.q4-badge-green {
+  background: #e7f7ef;
+  color: #278253;
+}
+
+.q4-badge-orange {
+  background: #fff2df;
+  color: #a96812;
+}
+
+.q4-info-list {
+  display: grid;
+  gap: 11px;
+}
+
+.q4-info-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  color: #778197;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.q4-info-value {
+  color: #29344d;
+  font-weight: 680;
+  text-align: right;
+}
+
+.q4-note {
+  margin: 0;
+  color: #59657a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .q4-page {
+    width: min(100% - 32px, 560px);
+    padding-top: 32px;
+  }
+
+  .q4-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .q4-frame {
+    padding: 19px;
+  }
+
+  .q4-info-row {
+    gap: 8px;
+  }
+}
