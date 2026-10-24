@@ -1,7 +1,7 @@
 import "./Q2.css";
-import AgentCard from "../components/AgentCard.jsx";
-import Panel from "../components/Panel.jsx";
-import StatCard from "../components/StatCard.jsx";
+import AgentCard from "../../components/AgentCard.jsx";
+import Panel from "../../components/Panel.jsx";
+import StatCard from "../../components/StatCard.jsx";
 
 function Q2() {
   const agents = [
